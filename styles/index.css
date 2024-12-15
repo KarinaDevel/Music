@@ -1,0 +1,40 @@
+.content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.content .wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+  height: 100%;
+}
+.content .wrapper img {
+  height: auto;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.content .wrapper .under {
+  width: 140px;
+  -o-object-fit: fill;
+     object-fit: fill;
+  margin: 0 auto;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+.content h1 {
+  margin: 0 auto;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+.content:hover .under, .content:hover h1 {
+  opacity: 1;
+}
+.wrapper:hover audio {
+  visibility: visible; 
+}

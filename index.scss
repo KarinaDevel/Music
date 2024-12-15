@@ -1,0 +1,37 @@
+.content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    user-select: none;
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        max-width: 200px;
+        height: 100%;
+        img{
+           height: auto;
+            width: 100%;
+            object-fit: cover;
+        }
+        .under{
+            width: 140px;
+            object-fit: fill;
+            margin: 0 auto;
+            opacity: 0;
+            transition: .5s ease-in-out;
+            }
+        }
+        h1{
+            margin: 0 auto;
+            opacity: 0;
+            transition: .5s ease-in-out;
+        }
+        &:hover{
+            .under, h1{
+                opacity: 1;
+            }
+
+        }
+        
+    }
